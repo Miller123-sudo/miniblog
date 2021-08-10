@@ -1,0 +1,21 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+<title>{% block title %}Contact{% endblock title %}</title>
+
+{% block contant %}
+    <div class="col-sm-10 my-5">
+        <h3>Contact Page</h3>
+        <form action="">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Example label</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+                </div>
+                <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Another label</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2">
+            </div>
+            <input type="Submit" class="btn btn-primary" value="Submit">
+        </form>
+    </div>
+{% endblock contant %}

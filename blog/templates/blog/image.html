@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block img %}
+    <form action="" method="POST" novalidate>
+        <div class="form-group">
+            {% csrf_token %}
+            {% comment %} <label for="exampleFormControlFile1">Image</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1"> {% endcomment %}
+            {{form}}
+        </div>
+        <input type="Submit" class='btn btn-danger' value="Upload">
+    </form>
+{% endblock img %}
